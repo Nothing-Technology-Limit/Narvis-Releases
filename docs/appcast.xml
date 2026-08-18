@@ -1,11 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"
-    xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
-    xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <channel>
-    <title>Narvis Updates</title>
-    <link>https://nothing-technology-limit.github.io/Narvis-Releases/appcast.xml</link>
-    <description>Signed Narvis application updates</description>
-    <language>en</language>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>Narvis Updates</title>
+        <link>https://nothing-technology-limit.github.io/Narvis-Releases/appcast.xml</link>
+        <description>Signed Narvis application updates</description>
+        <language>en</language>
+        <item>
+            <title>0.2.3</title>
+            <pubDate>Tue, 18 Aug 2026 16:57:38 +0800</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.3
+
+This is the first Narvis release with a one-click, signed update channel.
+
+- Adds an **Update** button to the Narvis panel. Updates are downloaded from an
+  immutable public GitHub Release and verified with Sparkle EdDSA before install.
+- Bundles the contract-tested Nothing Adapter v0.1.1 release. On a new Mac,
+  Narvis installs it into Application Support and automatically runs the
+  idempotent `init` and `register` steps.
+- Adapter installations managed by Narvis update atomically with the app. A
+  failed install leaves the previous managed version available for rollback.
+- Existing global Adapter releases and source checkouts are preserved and keep
+  their existing update paths.
+- Removes GitHub CLI, Git, repository access and terminal commands from the new
+  user path. Node.js 20 or later remains required.
+
+The DMG is universal (`arm64` + `x86_64`), Developer ID signed, Apple notarized
+and stapled. It records the bundled Adapter commit and checksum for diagnosis.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.3/Narvis-0.2.3-universal.dmg" length="2445034" type="application/octet-stream" sparkle:edSignature="JpuzJN/BCz0MPcKi3Bl8B+ZU4hOn0aKiac8Ebm5O8blXqgTDI+mfDVPyzTMs+96rQs2uMEgmTJPKi3MTYchkCA=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: aw/xnNcyjRlsuJ592pwgk8ROLm5YCDIN8DnW+qIlCuLtgb4RxhKaroOmvWCKRNAPnoAivH8VLYBJgIb3LGAYCA==
+length: 2408
+-->
