@@ -9,6 +9,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.5</title>
+            <pubDate>Tue, 18 Aug 2026 17:07:13 +0800</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.5
+
+This release advances the signed update channel so the one-click updater added
+in Narvis 0.2.4 can be verified end to end against a real newer version.
+
+- Keeps the one-click download, verification, installation and relaunch flow.
+- Keeps the contract-tested Nothing Adapter v0.1.1 bundle and atomic managed
+  installation behavior.
+- Preserves existing global Adapter releases and source checkouts.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.5/Narvis-0.2.5-universal.dmg" length="2454762" type="application/octet-stream" sparkle:edSignature="A5bNfRVSyNo7fBzGpzJ1VL7qUOfQ690Av97amb00ifIFSib+uCkmDvD2Gw6UvA2NU6GhNFGFamm9rY4NN55KCQ=="/>
+        </item>
+        <item>
             <title>0.2.4</title>
             <pubDate>Tue, 18 Aug 2026 17:03:40 +0800</pubDate>
             <sparkle:version>6</sparkle:version>
@@ -59,6 +77,6 @@ and stapled. It records the bundled Adapter commit and checksum for diagnosis.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: o+3cKYUUwkWfPt1fJAn7+hFbij6SxmqAZrJ0tDMH+T0sn6nN4jL5kO09K0rkfc8j6BUGd0cPi+mg2VfbF1kQCA==
-length: 3704
+edSignature: +MnKsE7AvRI69eToivQou5dvrJ1f1Zbuesy5rYMtWvT6+XhlhWqPPMiagxVSx/kTyDR6SqpTnzfnjikz8+KdCQ==
+length: 4830
 -->
