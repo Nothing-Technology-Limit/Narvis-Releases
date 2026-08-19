@@ -9,6 +9,38 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.8</title>
+            <pubDate>Thu, 20 Aug 2026 00:17:06 +0800</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.2.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.8
+
+This release restores phone connectivity with the current encrypted handshake,
+and turns Update into one control for Narvis and Nothing Adapter.
+
+- A single click updates an existing release or source-checkout Adapter before
+  Narvis downloads, verifies, installs and relaunches through Sparkle.
+- Checks for Narvis and Adapter updates every five minutes and marks the shared
+  Update control when either component has a newer version.
+- Keeps background checks informational: installation still requires the user
+  to click Update, and a running Adapter service is safely restarted around an
+  Adapter update.
+- Bundles contract-tested Nothing Adapter v0.1.4, including the Noise encrypted
+  transport expected by current Ditto phone builds. The adapter is version-locked
+  to commit `6d90a612` and switches atomically with Narvis.
+- Starts the service automatically after successful pairing, recovers orphaned
+  service processes after an app update, and reads paired phones from sealed
+  adapter configuration.
+- Avoids suggesting `/` or the home directory as one-click authorization roots,
+  and can open the live service log in Terminal.
+
+Node.js remains required to run Nothing Adapter. Existing release and source
+installations retain their native update paths, now coordinated by Narvis.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.8/Narvis-0.2.8-universal.dmg" length="2661097" type="application/octet-stream" sparkle:edSignature="Wtf9TPJu3DtNlDTdDw5RS+K5ObVv1L4kTU7+RGol8cMpV3dChg9IJv2Tx2sVPSxroh0aMXrx4FRWbThP5TH5Bg=="/>
+        </item>
+        <item>
             <title>0.2.7</title>
             <pubDate>Wed, 19 Aug 2026 11:56:04 +0800</pubDate>
             <sparkle:version>9</sparkle:version>
@@ -89,36 +121,9 @@ an immutable GitHub Release, Developer ID signing and Apple notarization.
 ]]></description>
             <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.4/Narvis-0.2.4-universal.dmg" length="2449641" type="application/octet-stream" sparkle:edSignature="O5mws0iaqaJxdAivZFivNoziSgCUxNQTaPvTyoVgVI/07MmwFJ2WyD6VKjnKHtETpC+kLP7BHmSgELNdDpsQCA=="/>
         </item>
-        <item>
-            <title>0.2.3</title>
-            <pubDate>Tue, 18 Aug 2026 16:57:38 +0800</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.3
-
-This is the first Narvis release with a one-click, signed update channel.
-
-- Adds an **Update** button to the Narvis panel. Updates are downloaded from an
-  immutable public GitHub Release and verified with Sparkle EdDSA before install.
-- Bundles the contract-tested Nothing Adapter v0.1.1 release. On a new Mac,
-  Narvis installs it into Application Support and automatically runs the
-  idempotent `init` and `register` steps.
-- Adapter installations managed by Narvis update atomically with the app. A
-  failed install leaves the previous managed version available for rollback.
-- Existing global Adapter releases and source checkouts are preserved and keep
-  their existing update paths.
-- Removes GitHub CLI, Git, repository access and terminal commands from the new
-  user path. Node.js 20 or later remains required.
-
-The DMG is universal (`arm64` + `x86_64`), Developer ID signed, Apple notarized
-and stapled. It records the bundled Adapter commit and checksum for diagnosis.
-]]></description>
-            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.3/Narvis-0.2.3-universal.dmg" length="2445034" type="application/octet-stream" sparkle:edSignature="JpuzJN/BCz0MPcKi3Bl8B+ZU4hOn0aKiac8Ebm5O8blXqgTDI+mfDVPyzTMs+96rQs2uMEgmTJPKi3MTYchkCA=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: ZfiUw3HCfng65mwq2JewMsCby0tksvlXg4j2gyk+zUfW9cAtoZJjQEq0vDoI+iLOzHWIF3fa76z8kFlEeUTxBQ==
-length: 7397
+edSignature: CRyPeiT4SinxdSyBW5ipuaA6jB+R4RWjIIxFu2SYNUPDUdz6/ufZ+Hya6qGr0DWHKQDvANECnOUsZ+XARjMoBg==
+length: 7712
 -->
