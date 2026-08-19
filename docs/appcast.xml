@@ -9,6 +9,26 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.7</title>
+            <pubDate>Wed, 19 Aug 2026 11:56:04 +0800</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.7
+
+This maintenance release keeps the Session Island attached to the MacBook
+notch when the display layout changes.
+
+- Repositions the resident Island trigger after a display is connected,
+  disconnected, or rearranged.
+- Retracts an open Island during a display change, then recalculates its
+  placement the next time it opens.
+- Keeps the signed one-click update flow, the restored Narvis app icon, and the
+  contract-tested Nothing Adapter v0.1.1 bundle unchanged.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.7/Narvis-0.2.7-universal.dmg" length="2543337" type="application/octet-stream" sparkle:edSignature="32WaRe5j1roicYiq7e416wr6oq/v7oYrCSgKuZIoYwn01uZZe/buNblIVBzIG6EpHQUI8zhMnEUKKMh0X/QmDg=="/>
+        </item>
+        <item>
             <title>0.2.6</title>
             <pubDate>Tue, 18 Aug 2026 20:09:11 +0800</pubDate>
             <sparkle:version>8</sparkle:version>
@@ -99,6 +119,6 @@ and stapled. It records the bundled Adapter commit and checksum for diagnosis.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: RsPqI4bxC9hiBlMfPZsUNB/oyNZDAbmmbAJyfwLjqEFs82JE7XsakRXAzRRofakpT/AxGVupKquEzHj41cq/BQ==
-length: 6206
+edSignature: ZfiUw3HCfng65mwq2JewMsCby0tksvlXg4j2gyk+zUfW9cAtoZJjQEq0vDoI+iLOzHWIF3fa76z8kFlEeUTxBQ==
+length: 7397
 -->
