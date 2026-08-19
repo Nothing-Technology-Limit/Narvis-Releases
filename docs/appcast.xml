@@ -9,6 +9,29 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.9</title>
+            <pubDate>Thu, 20 Aug 2026 00:25:39 +0800</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.2.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.9
+
+This hotfix makes new phone pairings use the encrypted Noise protocol shipped in
+Nothing Adapter 0.1.4.
+
+- Stops passing `--allow-insecure-plaintext` to Adapter 0.1.4 and newer. On these
+  builds that flag explicitly downgrades pairing to the legacy plaintext path.
+- Keeps the flag only for adapters older than 0.1.4, where it was required for
+  pairing to run at all.
+- Extends the DMG contract gate to verify that the bundled adapter exposes Noise
+  pairing as the default and plaintext as an explicit opt-in.
+
+Users with a pairing created before Noise should pair the phone again once. The
+new encrypted record is then used by subsequent service connections.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.9/Narvis-0.2.9-universal.dmg" length="2674410" type="application/octet-stream" sparkle:edSignature="EZfhA+Ykz/J/t3Hd4k7RNJZ0W84Lsn+lqotzNoH8CmPBnHN4vWMvkgDAz3LvSbS1xvBIGge2LPgPgbgECaDyCQ=="/>
+        </item>
+        <item>
             <title>0.2.8</title>
             <pubDate>Thu, 20 Aug 2026 00:17:06 +0800</pubDate>
             <sparkle:version>10</sparkle:version>
@@ -100,30 +123,9 @@ in Narvis 0.2.4 can be verified end to end against a real newer version.
 ]]></description>
             <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.5/Narvis-0.2.5-universal.dmg" length="2454762" type="application/octet-stream" sparkle:edSignature="A5bNfRVSyNo7fBzGpzJ1VL7qUOfQ690Av97amb00ifIFSib+uCkmDvD2Gw6UvA2NU6GhNFGFamm9rY4NN55KCQ=="/>
         </item>
-        <item>
-            <title>0.2.4</title>
-            <pubDate>Tue, 18 Aug 2026 17:03:40 +0800</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.4
-
-- Makes the panel's **Update** button genuinely one-click: that click authorizes
-  the update, and Narvis then downloads, verifies, extracts, installs and
-  relaunches automatically.
-- Keeps visible progress and error reporting while removing Sparkle's two
-  redundant install confirmation steps.
-- Informational-only releases still use Sparkle's standard prompt and are never
-  treated as installable application updates.
-
-The update remains protected by the signed GitHub Pages appcast, Sparkle EdDSA,
-an immutable GitHub Release, Developer ID signing and Apple notarization.
-]]></description>
-            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.4/Narvis-0.2.4-universal.dmg" length="2449641" type="application/octet-stream" sparkle:edSignature="O5mws0iaqaJxdAivZFivNoziSgCUxNQTaPvTyoVgVI/07MmwFJ2WyD6VKjnKHtETpC+kLP7BHmSgELNdDpsQCA=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: CRyPeiT4SinxdSyBW5ipuaA6jB+R4RWjIIxFu2SYNUPDUdz6/ufZ+Hya6qGr0DWHKQDvANECnOUsZ+XARjMoBg==
-length: 7712
+edSignature: pxtiKFnwTAgIazpC3MYwfhDQdBzazk9/9z+O8Hubc0AgmOcHzN4vlhFId3yxXobJpH1LtV4wF+2lLbCfMNsLAQ==
+length: 7798
 -->
