@@ -9,6 +9,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.10</title>
+            <pubDate>Thu, 20 Aug 2026 01:23:45 +0800</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.2.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.10
+
+This hotfix makes phone pairing start reliably while the Narvis service is running.
+
+- Narvis now pauses the Adapter service before generating a pairing QR code, waits for the shared connection lock to be released, and restores the service afterwards.
+- Pairing startup failures now show an actionable error instead of remaining indefinitely on “Starting Adapter…”.
+- “Regenerate” safely handles an active service before retrying.
+- Bundles the contract-verified Nothing Adapter 0.1.4 release.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.10/Narvis-0.2.10-universal.dmg" length="2671851" type="application/octet-stream" sparkle:edSignature="vaEtwpiVIBQ5+jxD+X3Z14SJ+zS1F4cMWgBscJ8Irkhc0+pniapmYBOGiY/Wr8elmiVZhpt4W49hhC5SHraJAw=="/>
+        </item>
+        <item>
             <title>0.2.9</title>
             <pubDate>Thu, 20 Aug 2026 00:25:39 +0800</pubDate>
             <sparkle:version>11</sparkle:version>
@@ -105,27 +122,9 @@ the final app bundle.
 ]]></description>
             <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.6/Narvis-0.2.6-universal.dmg" length="2535145" type="application/octet-stream" sparkle:edSignature="4oaBLdolZCwwhRpFR4tWLf7am+Q7cV6HXQyhshWg/WztBwKFOIzBhX9yLNuHljXjYoiSOMnsddz9KPpi6q8iAA=="/>
         </item>
-        <item>
-            <title>0.2.5</title>
-            <pubDate>Tue, 18 Aug 2026 17:07:13 +0800</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.5
-
-This release advances the signed update channel so the one-click updater added
-in Narvis 0.2.4 can be verified end to end against a real newer version.
-
-- Keeps the one-click download, verification, installation and relaunch flow.
-- Keeps the contract-tested Nothing Adapter v0.1.1 bundle and atomic managed
-  installation behavior.
-- Preserves existing global Adapter releases and source checkouts.
-]]></description>
-            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.5/Narvis-0.2.5-universal.dmg" length="2454762" type="application/octet-stream" sparkle:edSignature="A5bNfRVSyNo7fBzGpzJ1VL7qUOfQ690Av97amb00ifIFSib+uCkmDvD2Gw6UvA2NU6GhNFGFamm9rY4NN55KCQ=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: pxtiKFnwTAgIazpC3MYwfhDQdBzazk9/9z+O8Hubc0AgmOcHzN4vlhFId3yxXobJpH1LtV4wF+2lLbCfMNsLAQ==
-length: 7798
+edSignature: wV2RQaRUfb4bzlRaNStTdr+BK+y2XcadqsBI4mmGnhr6/aogAOyzmPr0B/wlQLJ95arpLu3ERQyI7oizEa/ABA==
+length: 7908
 -->
