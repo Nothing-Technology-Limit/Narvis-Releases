@@ -9,6 +9,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.13</title>
+            <pubDate>Fri, 21 Aug 2026 16:54:03 +0800</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.2.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.13
+
+This hotfix makes the macOS 14 compatibility work in the distributable app and in one-click updates.
+
+- Set the signed app and both universal binary slices to a macOS 14.0 deployment target.
+- Advertise macOS 14.0 correctly in the Sparkle update feed.
+- Add a release-time check that blocks future DMGs when the app or binary deployment target drifts.
+- Keep the contract-verified Nothing Adapter 0.1.4 release bundled in the DMG.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.13/Narvis-0.2.13-universal.dmg" length="2787563" type="application/octet-stream" sparkle:edSignature="ZWKGvLjwNwdC2VU8If6acNL26oyck19mf04WM3Go+q82X64E40Pyr+wc9GS4bI9dWHEJmbFkUmiAnKOUME+5Dg=="/>
+        </item>
+        <item>
             <title>0.2.12</title>
             <pubDate>Fri, 21 Aug 2026 16:48:24 +0800</pubDate>
             <sparkle:version>14</sparkle:version>
@@ -118,6 +135,6 @@ installations retain their native update paths, now coordinated by Narvis.
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: UEiDUAAo+neoIsd2eeuH1nUYhTq705Pa4oVHm/O+BlTslE8r802wY8My9i8hKrY1yQ50RiO6B4OjUhIaERA/BA==
-length: 7907
+edSignature: pJuk2SoAQf9z5RC0QJ/Or13EmLEFfoDjN92X2VWhScPJNuJ7rWfPw62qhHPf2sEaiYqby50rwahLYVEpdZgsBQ==
+length: 9070
 -->
