@@ -9,6 +9,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <description>Signed Narvis application updates</description>
         <language>en</language>
         <item>
+            <title>0.2.12</title>
+            <pubDate>Fri, 21 Aug 2026 16:48:24 +0800</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.2.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.12
+
+This release broadens Mac compatibility and makes Adapter service setup easier to diagnose.
+
+- Run Narvis on macOS 14 and newer, with native Liquid Glass where available and a compatible material fallback on older systems.
+- Detect every running Nothing Adapter serve process and show its owning process chain, so duplicate or stale services are easier to identify.
+- Start authorized-root suggestions from the directories where Claude and Codex sessions actually live.
+- Bundle the contract-verified Nothing Adapter 0.1.4 release.
+]]></description>
+            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.12/Narvis-0.2.12-universal.dmg" length="2770155" type="application/octet-stream" sparkle:edSignature="HmhAvXFpSiDsKOk16Fd5TWzPTytZXQaVpVqO2efUUywy1QtxhM1odkly31UPOLmvYUGCzV7e7dsIqQd7bdbCCg=="/>
+        </item>
+        <item>
             <title>0.2.11</title>
             <pubDate>Thu, 20 Aug 2026 16:28:02 +0800</pubDate>
             <sparkle:version>13</sparkle:version>
@@ -98,29 +115,9 @@ installations retain their native update paths, now coordinated by Narvis.
 ]]></description>
             <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.8/Narvis-0.2.8-universal.dmg" length="2661097" type="application/octet-stream" sparkle:edSignature="Wtf9TPJu3DtNlDTdDw5RS+K5ObVv1L4kTU7+RGol8cMpV3dChg9IJv2Tx2sVPSxroh0aMXrx4FRWbThP5TH5Bg=="/>
         </item>
-        <item>
-            <title>0.2.7</title>
-            <pubDate>Wed, 19 Aug 2026 11:56:04 +0800</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Narvis 0.2.7
-
-This maintenance release keeps the Session Island attached to the MacBook
-notch when the display layout changes.
-
-- Repositions the resident Island trigger after a display is connected,
-  disconnected, or rearranged.
-- Retracts an open Island during a display change, then recalculates its
-  placement the next time it opens.
-- Keeps the signed one-click update flow, the restored Narvis app icon, and the
-  contract-tested Nothing Adapter v0.1.1 bundle unchanged.
-]]></description>
-            <enclosure url="https://github.com/Nothing-Technology-Limit/Narvis-Releases/releases/download/v0.2.7/Narvis-0.2.7-universal.dmg" length="2543337" type="application/octet-stream" sparkle:edSignature="32WaRe5j1roicYiq7e416wr6oq/v7oYrCSgKuZIoYwn01uZZe/buNblIVBzIG6EpHQUI8zhMnEUKKMh0X/QmDg=="/>
-        </item>
     </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: ZDxtwyVe19c6Q0rJwd1IqFAbe91IpPyJf9XiX7CUU+Kc1ltSkOw1Ngz8RLMxfdnkQsZKuzdPHocGuRSNIz+WBw==
-length: 7834
+edSignature: UEiDUAAo+neoIsd2eeuH1nUYhTq705Pa4oVHm/O+BlTslE8r802wY8My9i8hKrY1yQ50RiO6B4OjUhIaERA/BA==
+length: 7907
 -->
